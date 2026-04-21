@@ -47,7 +47,7 @@ export default function App() {
         g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + d + 0.3)
         o.start(ctx.currentTime + d); o.stop(ctx.currentTime + d + 0.35)
       })
-    } catch {}
+    } catch (_e) { /* ignore */ }
   }
 
   const handleComplete = useCallback(() => {
