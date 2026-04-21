@@ -29,6 +29,6 @@ describe('Session 循環邏輯', () => {
     expect(4 % SESSIONS_BEFORE_LONG).toBe(0)
   })
   it('第 1~3 次切換短休息', () => {
-    ;[1, 2, 3].forEach((s) => expect(s % SESSIONS_BEFORE_LONG).not.toBe(0))
+    [1, 2, 3].forEach((s) => expect(s % SESSIONS_BEFORE_LONG).not.toBe(0))
   })
 })
